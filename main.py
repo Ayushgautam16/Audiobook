@@ -2,7 +2,7 @@ import pyttsx3
 import PyPDF2
 
 # Ensure there are no spaces in the file name string
-# Use pdfReader.pages[num] instead of pdfReader.getPage(num).
+
 # Use page.extract_text() instead of page.extractText()
 book = open('software.pdf', 'rb')
 
