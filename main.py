@@ -1,12 +1,20 @@
 import pyttsx3
 import PyPDF2
-book = open('Unit 3 Software Design (1).pdf ', 'rb')
-pdfReader = PyPDF2.PdfFileReader(book)
-pages = pdfReader.numPages
 
+# Open the PDF file
+book = open('software.pdf', 'rb')
+
+# Use PdfReader instead of PdfFileReader
+pdfReader = PyPDF2.PdfReader(book)
+pages = len(pdfReader.pages)
+
+# Initialize the text-to-speech engine
 speaker = pyttsx3.init()
+
+# Loop through the pages and read the text
 for num in range(7, pages):
-    page = pdfReader.getPage(num)
-    text = page.extractText()
+    page = pdfReader.pages[num]
+    text = page.extract_text()
     speaker.say(text)
     speaker.runAndWait()
+
