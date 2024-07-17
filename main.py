@@ -1,7 +1,7 @@
 import pyttsx3
 import PyPDF2
 
-# Open the PDF file
+
 book = open('software.pdf', 'rb')
 
 # Use PdfReader instead of PdfFileReader
