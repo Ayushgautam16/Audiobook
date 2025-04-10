@@ -4,7 +4,7 @@
 # Ensure there are no spaces in the file name string
 
 # Use page.extract_text() instead of page.extractText()
-book = open('software.pdf', 'rb')
+#book = open('software.pdf', 'rb')
 
 # Use PdfReader instead of PdfFileReader
 pdfReader = PyPDF2.PdfReader(book)
