@@ -1,5 +1,5 @@
 #import pyttsx3
-import PyPDF2
+#import PyPDF2
 
 # Ensure there are no spaces in the file name string
 
